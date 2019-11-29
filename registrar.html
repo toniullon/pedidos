@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>USUARIOS</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.1.0.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/stilo.css" rel="stylesheet" type="text/css"/>  
+     <script src="js/bootstrap.js" type="text/javascript"></script>
+         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+         <script src="js/jquery.min.js" type="text/javascript"></script>
+         <script src="js/dropdown.js" type="text/javascript"></script>
+         <script src="js/carousel.js" type="text/javascript"></script>
+         <script src="js/transition.js" type="text/javascript"></script>
+         <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+         <script src="js/funciones.js" type="text/javascript"></script>
+         <script src="js/modal.js" type="text/javascript"></script>
+         <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="js/registros.js"></script>
+        
+      
+    </head>
+    <body> 
+      <form id="registrar" method="post" autocomplete="off">
+<ul data-role="listview" data-inset="false" data-theme="b">
+	<li style="display:none">
+		<label style="font-size:15px">id</label>
+		<input type="text" id="id_usuario" name="id_usuario" placeholder="ID" required>
+	</li>
+	
+	<li>
+		<label style="font-size:15px">Nombre</label>
+		<input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Armando" required>
+	</li>
+	<li>
+		<label style="font-size:15px">Apellidos</label>
+		<input type="text" id="apellido_usuario" name="apellido_usuario" placeholder="Paredes" required>
+	</li>
+	<li>
+		<label style="font-size:15px">Direccion</label>
+		<input type="text" id="direccion_usuario" name="direccion_usuario" placeholder="3602 Egestas Avenue" required>
+	</li>
+	
+	<li>
+		<label style="font-size:15px">Email</label>
+		<input type="email" id="correo_usuario" name="correo_usuario" placeholder="email@dominio.com" required>
+	</li>
+	
+	<li>
+		<label style="font-size:15px">Pasword</label>
+		<input type="password" id="pasword_usuario" name="pasword_usuario" placeholder="Clave" required>
+	</li>
+
+<li>
+		<label style="font-size:15px">Pasword</label>
+		<input type="password" id="pasword_usuario2" name="pasword_usuario2" placeholder="Confirmar Clave" required>
+	</li>
+	
+	<li>
+<input type="radio" value="si" style="width:20px;height:15px;margin-left:60px" name="pregunta" id="pregunta_si"/><div style="margin-left:100px;font-size:13px"> He leido y Entendido los terminos |<b style="font-size:13px;color:blue"> terminos y condiciones</b></div> 
+		</li>
+	
+	<li>
+	  <input type="button" style="background-color:#1ED935; color:white ;margin-left:30%; width: 300px" class="btn" value="REGISTRAR" onclick="valida()" id="agregarusu" name="agregarusu" data-role="button">
+	  <input type="button" style="background-color:#1ED935; color:white ; width: 300px" class="btn" value="CANCELAR" onclick="can()" id="cancelar" name="cancelar" data-role="button">
+	</li>
+</ul>
+</form>
+</body>
+</html>

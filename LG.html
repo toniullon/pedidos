@@ -1,0 +1,282 @@
+        <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo login jqm</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.1.0.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/stilo.css" rel="stylesheet" type="text/css"/>  
+      <script src="js/bootstrap.js" type="text/javascript"></script>
+         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+         <script src="js/jquery.min.js" type="text/javascript"></script>
+         <script src="js/dropdown.js" type="text/javascript"></script>
+         <script src="js/carousel.js" type="text/javascript"></script>
+         <script src="js/transition.js" type="text/javascript"></script>
+         <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+         <script src="js/funciones.js" type="text/javascript"></script>
+         <script src="js/modal.js" type="text/javascript"></script>
+         <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	 <script src="pedidos.js"></script>
+<script src="productos.js"></script>
+        <script src="js/menu.js"></script>
+    
+</head>
+<body>
+    
+
+        <div id="subir" style="background-image: url('img/rio.jpg'); width: 100%;height: 100px; background-repeat:  no-repeat">
+            <center>
+                <h4 class="texto paddintexto"> PEDIDOS YA!</h4> <a ng-href="" onclick="revisar()" data-toggle="modal" data-target="#carrito" ng-if="publicCtrl.loadPage == 1" ng-click="publicCtrl.openCartDialog(publicCtrl.routeStatus)" class="lw-shopping-cart-btn btn btn-default pull-right ng-binding ng-scope" ng-bind-html="publicCtrl.cart_string" style=""><i class="glyphicon glyphicon-shopping-cart"></i> <strong>0</strong> artículo de <strong>0.00 gs</strong> en su carrito</a></center>
+            </div>
+         <div class="bordeabajo"> <h4>PRODUCTOS</h4> </div>
+         <!--
+            CARD CON LINK
+            -->
+            <CENTER>
+			<form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search"  placeholder="Buscar" aria-label="Search">
+                   <button class="btn btn-outline-success my-2 my-sm-0" style="background-color: pink" type="button" onclick="menu()">Atras</button>
+             
+				  <button class="btn btn-outline-success my-2 my-sm-0" style="background-color: pink" type="submit">Buscar</button>
+                </form>
+			<div class="row">
+                <div class=" col-xs-6 col-md-3">
+                    <div class="card" style="width: 18rem;">
+                    <a href="#" class="thumbnail">
+
+                        <img class="card-img-top" data-toggle="modal" data-target="#productouno" src="img/lg1.jpg" alt=""/>
+                    </a>
+                    <div class="card-body">
+
+                        <a class="card-text" href="#">Celular LG G7 Fit Negro. </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-xs-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    
+                
+                    <a href="#" class="thumbnail">
+
+                        <img class="card-img-top" data-toggle="modal" data-target="#productodos" src="img/lg2.jpg" alt=""/>
+                    </a>
+                    <div class="card-body">
+
+                        <a class="card-text" href="#">LG LMG810RA Producto de Soporte.</a>
+                    </div>
+                </div>
+</div>
+           <div class=" col-xs-6 col-md-3">
+               <div class="card" style="width: 18rem;">
+                    <a href="#" class="thumbnail">
+
+                        <img class="card-img-top" src="img/lg3.jpg" alt=""/>
+                    </a>
+                    <div class="card-body">
+
+                        <p class="card-text" href="#">LG LTE M400MT STYLUS 3 .</p>
+                    </div>
+                </div>
+</div>
+            <div class=" col-xs-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="#" class="thumbnail">
+
+                        <img class="card-img-top" src="img/lg4.jpg" alt=""/>
+                    </a>
+                    <div class="card-body">
+
+                        <p class="card-text">Pantalla de alta definición en tu X Max.</p>
+                    </div>
+                </div>
+                
+</div> </div>
+            <div class="row">
+                <div class=" col-xs-6 col-md-3">
+                    <div class="card" style="width: 18rem;">
+                    <a href="#" class="thumbnail">
+
+                        <img class="card-img-top" src="img/lg5.jpg" alt=""/>
+                    </a>
+                    <div class="card-body">
+
+                        <a class="card-text" href="#">Smartphone LG G6 | Resistente al Agua. </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-xs-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    
+                
+                    <a href="#" class="thumbnail">
+
+                        <img class="card-img-top" src="img/lg6.jpg" alt=""/>
+                    </a>
+                    <div class="card-body">
+
+                        <a class="card-text" href="#">Conoce el nuevo LG Q60 con triple cámara e inteligencia artificial.</a>
+                    </div>
+                </div>
+</div>
+           <div class=" col-xs-6 col-md-3">
+               <div class="card" style="width: 18rem;">
+                    <a href="#" class="thumbnail">
+
+                        <img class="card-img-top" src="img/lg7.jpg" alt=""/>
+                    </a>
+                    <div class="card-body">
+
+                        <p class="card-text" href="#">Smartphone LG K11| LG.</p>
+                    </div>
+                </div>
+</div>
+            <div class=" col-xs-6 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="#" class="thumbnail">
+
+                        <img class="card-img-top" src="img/lg8.jpg" alt=""/>
+                    </a>
+                    <div class="card-body">
+
+                        <p class="card-text">Smartphone LG K11, 5.3", Android 7.1, LTE, Dual SIM.</p>
+                    </div>
+                </div>
+                
+</div>      </div>
+ </CENTER>
+ 
+ <div class="modal fade" id="productouno" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Celular LG G7 Fit Negro.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	    <div style="position:absolute; margin-top:25%; margin-left: 55%; font-size: 13px; width: 20%"> <b style="font-size: 13px">Marca :</b> samsung  <b style="font-size: 13px">Precio :</b> 1.250.000  <b style="font-size: 13px">Color :</b> varios   <b style="font-size: 13px">Modelo :</b> MT-M400MT</div>
+    
+        <img class="card-img-top" src="img/lg1.jpg" alt=""/>
+		
+		<input id="cantidad_pedido" name="cantidad_pedido" type="number" value="1">
+		<input id="precio_pedido" name="precio_pedido" type="number" value="800000" style="display:none">
+		<input id="fecha_pedido" name="fecha_pedido" type="date" style="display:none">
+		<input id="estado_pedido" name="estado_pedido" type="text" value="PENDIENTE" style="display:none">
+		<input id="id_producto" name="id_producto" type="text" value="13" style="display:none">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="agregar" name="agregar" onclick="comparar()">agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <div class="modal fade" id="productodos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">LG LMG810RA Producto de Soporte.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	    <div style="position:absolute; margin-top:25%; margin-left: 55%; font-size: 13px; width: 20%"> <b style="font-size: 13px">Marca :</b> samsung  <b style="font-size: 13px">Precio :</b> 1.500.000  <b style="font-size: 13px">Color :</b> varios   <b style="font-size: 13px">Modelo :</b> MT-M400MT</div>
+    
+        <img class="card-img-top" src="img/lg2.jpg" alt=""/>
+		<input id="precio_pedido1" name="precio_pedido1" type="number" value="1200000" style="display:none">
+		<input id="cantidad_pedido1" name="cantidad_pedidos1" type="number" value="1">
+		<input id="fecha_pedido1" name="fecha_pedido1" type="date" style="display:none">
+		<input id="estado_pedido1" name="estado_pedido1" type="text" value="PENDIENTE" style="display:none">
+		<input id="id_producto1" name="id_producto1" type="text" value="14" style="display:none">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="agregar1" name="agregar1" onclick="comparar1()">agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ <div class="modal fade" id="carrito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       CARRITO DE COMPRAS
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+		<input type="text" style="display:none" id="id_pedido" value="sin nombre" name="id_pedido">
+		<input type="text" style="display:none" id="nombre_usuario" value="sin nombre" name="nombre_usuario" >
+		<input type="text" style="display:none" id="id_usuario" name="id_usuario">
+      </div>
+      <div class="modal-body">
+      <div id="datos"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
+        <button type="button" style="background-color:#FF6133; color:white" class="btn" id="agregarfin" data-toggle="modal" data-target="#registrar" name="agregarfin">FINALIZAR COMPRA</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="width:60%" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="font-size:19px">
+       ACCEDER
+      </div>
+      <div class="modal-body">
+ 
+			<div class="row"> 
+				<div class="col-md-12"> 
+					<label style="font-size:15px">Usuario </label> </div> 
+						<div class="col-md-6"> 
+					<input id="usuario_usuario" name="usuario_usuario" type="text" class="fcontrolbordo">
+					<a class="error" id='resultadoC'></a>
+				</div>
+			</div>
+			<div class="row">
+                        <div class="col-md-12"> <label style="font-size:15px">Contraseña</label>
+                        </div> 
+                        <div class="col-md-6">
+                            <input id="clave_usuario" name="clave_usuario" type="password" class="fcontrolbordo">
+                            <a class="error" id='resultadoU'></a>
+                        </div> 
+            </div>
+			
+			<div style="position: absolute; top: 30%;margin-left:60%">
+			<div FACE="small fonts" style="font-size:15px">¿Aun no Estas Reguistrado?</div>
+			<br>
+			      <button type="button" onclick="ver()" class="btn" style="background-color:#FF6133 ;margin-left:14%; color:white ; height: 60px"  id="regi" name="regi">Registrarse Ahora</button>
+  	</div>
+  </div>
+  
+<br>
+        <button type="button" style="background-color:#1ED935; color:white ;margin-left:10%" class="btn" id="" data-toggle="modal" data-target="#registrar" name="agregar">ACCEDER</button>
+    <div class="modal-body">
+ 
+		
+  </div>
+	</div>
+     
+      
+    </div>
+  </div>
+   <div id="productodos" style="position:fixed; top:80%; margin-right:550px; display:none">
+         <a style="color: #CD5C5C" ng-href="" ng-if="publicCtrl.loadPage == 1" ng-click="publicCtrl.openCartDialog(publicCtrl.routeStatus)" class="lw-shopping-cart-btn btn btn-default pull-right ng-binding ng-scope" ng-bind-html="publicCtrl.cart_string" ><i class="glyphicon glyphicon-shopping-cart"></i>PRODUCTO CARGADO EN EL CARRITO</a>
+
+</div>
+ </body>
+</html>
